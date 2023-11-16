@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/citaciones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/notes_ic"
+        android:title="" />
+    <item
+        android:id="@+id/trabajadores"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/workers_ic"
+        android:title="" />
+    <item
+        android:id="@+id/add"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:icon="@drawable/add_ic"
+        android:title=""/>
+    <item
+        android:id="@+id/inicio"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:icon="@drawable/home_ic"
+        android:title="" />
+    <item
+        android:id="@+id/clientes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/clients_ic"
+        android:title="" />
+</menu>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_baseview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3E3E3E"
+    android:clipToPadding="false"
+    tools:context=".LoginActivity">
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="285dp"
+        android:layout_height="181dp"
+        android:layout_marginTop="40dp"
+        android:background="#00FFFFFF"
+        android:contentDescription="logo"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@raw/logo_app" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="309dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardCornerRadius="25dp"
+        app:contentPadding="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="246dp"
+                android:layout_height="37dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/ubuntu_medium"
+                    android:text="Login"
+                    android:textAlignment="textStart"
+                    android:textColor="#000000"
+                    android:textSize="25dp" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/mail"
+                style="@android:style/Widget.Holo.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:backgroundTint="#C4C4C4"
+                android:drawableEnd="@drawable/mail_ic"
+                android:ems="10"
+                android:hint="Username"
+                android:inputType="textEmailAddress"
+                android:textColor="#4B4B4B"
+                android:textColorHighlight="#60A6FFB9"
+                android:textColorHint="#757575"
+                android:textColorLink="#4B4B4B"
+                android:textIsSelectable="false"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/password"
+                style="@android:style/Widget.Holo.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:backgroundTint="#C4C4C4"
+                android:drawableEnd="@drawable/lock_ic"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textColor="#4B4B4B"
+                android:textColorHighlight="#6065FF86"
+                android:textColorHint="#757575"
+                android:textColorLink="#6065FF86"
+                android:textCursorDrawable="@color/green3"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btn_forgottenpassword"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="Forgot password?"
+                android:text="Forgot password?"
+                android:textAlignment="center"
+                android:textColor="#5FE875"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btn_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="login"
+                    android:text="Login"
+                    android:textAlignment="center"
+                    app:cornerRadius="1dp" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="12dp" />
+
+                <Button
+                    android:id="@+id/btn_register"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="register"
+                    android:text="Register"
+                    android:textAlignment="center"
+                    app:cornerRadius="1dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@android:style/Widget.Holo.Light.ProgressBar.Small"
+        android:layout_width="169dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:progressBackgroundTint="@color/green1"
+        android:progressTint="@color/green1"
+        android:secondaryProgressTint="@color/green1"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "652202422633",
+    "project_id": "vetclinic-pro",
+    "storage_bucket": "vetclinic-pro.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:652202422633:android:29cf0069e34dd41a890df8",
+        "android_client_info": {
+          "package_name": "com.example.vetclinicpro"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhfUPAI3sRi8S_ymwtUonwjbPITQZv3kI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
